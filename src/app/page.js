@@ -51,10 +51,17 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="text-center max-w-5xl mx-auto">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 mb-8 animate-fade-in-down shadow-sm">
-              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span className="text-sm font-semibold text-[var(--color-heading)]">Official WhatsApp Business API Partner</span>
-              <Sparkles className="w-4 h-4 text-[var(--color-accent)]" />
+            <div className="inline-flex items-center gap-3 glass rounded-full px-5 py-2.5 mb-8 animate-fade-in-down shadow-sm border border-gray-200/50">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta" className="h-4 w-auto opacity-70" />
+              <div className="w-px h-4 bg-gray-300"></div>
+              <div className="flex items-center gap-1.5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/20px-WhatsApp.svg.png" alt="WhatsApp" className="w-4 h-4" />
+                <span className="text-sm font-semibold text-[var(--color-heading)]">Official Business API Partner</span>
+              </div>
+              <div className="flex items-center gap-1 bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">
+                <CheckCircle className="w-3 h-3" />
+                Verified
+              </div>
             </div>
 
             {/* Headline */}
@@ -255,44 +262,164 @@ export default function HomePage() {
       </section>
 
       {/* ═══════ SOCIAL PROOF ═══════ */}
-      <section className="py-16 bg-white border-y border-gray-100 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-xs font-bold text-[var(--color-muted)] uppercase tracking-[0.2em] mb-8 reveal">
-            Trusted by businesses across industries
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 reveal delay-200">
-            {["E-commerce Brands", "Healthcare Clinics", "Real Estate", "Education Institutes", "Restaurants & Cafes", "Travel Agencies", "Fitness Studios", "SaaS Companies"].map((t, i) => (
-              <span key={t} className="px-5 py-2.5 bg-[var(--color-surface)] rounded-full text-sm font-semibold text-[var(--color-body)] border border-gray-100 hover:border-[var(--color-primary)]/30 hover:bg-[var(--color-primary)]/5 transition-all cursor-default">
-                {t}
-              </span>
-            ))}
+      <section className="py-20 bg-gradient-to-b from-white via-[var(--color-surface)] to-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(circle, #4F46E5 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-14 reveal">
+            <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+              <Globe className="w-3.5 h-3.5" /> Trusted Worldwide
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[var(--color-heading)] tracking-tight">
+              Powering businesses across industries
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 reveal delay-200">
+            {[
+              { name: "E-commerce", count: "400+", icon: ShoppingCart, gradient: "from-orange-500 to-amber-500" },
+              { name: "Healthcare", count: "150+", icon: Shield, gradient: "from-emerald-500 to-teal-500" },
+              { name: "Real Estate", count: "200+", icon: Globe, gradient: "from-blue-500 to-indigo-500" },
+              { name: "Education", count: "120+", icon: Users, gradient: "from-violet-500 to-purple-500" },
+              { name: "Restaurants", count: "180+", icon: Star, gradient: "from-rose-500 to-pink-500" },
+              { name: "Travel & Tourism", count: "90+", icon: Send, gradient: "from-cyan-500 to-blue-500" },
+              { name: "Fitness & Wellness", count: "75+", icon: Zap, gradient: "from-lime-500 to-green-500" },
+              { name: "SaaS Companies", count: "60+", icon: Layers, gradient: "from-gray-600 to-gray-800" },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.name} className="group relative p-5 rounded-2xl bg-white border border-gray-100 card-hover overflow-hidden text-center" style={{ transitionDelay: `${i * 60}ms` }}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-[0.06] transition-opacity duration-500`}></div>
+                  <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mx-auto mb-3 shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className="w-5 h-5 text-white" />
+                  </div>
+                  <p className="text-sm font-bold text-[var(--color-heading)] mb-0.5">{item.name}</p>
+                  <p className="text-xs text-[var(--color-primary)] font-bold">{item.count} businesses</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ═══════ TESTIMONIAL ═══════ */}
+      {/* ═══════ TESTIMONIALS ═══════ */}
       <section className="py-24 md:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)] via-[var(--color-primary-dark)] to-indigo-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-heading)] via-slate-900 to-indigo-950"></div>
         <div className="absolute inset-0 noise"></div>
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[100px]"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[var(--color-primary)]/10 rounded-full blur-[100px]"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[var(--color-accent)]/5 rounded-full blur-[100px]"></div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-          <div className="flex justify-center gap-1 mb-8">
-            {[1, 2, 3, 4, 5].map((s) => (
-              <Star key={s} className="w-6 h-6 fill-[var(--color-accent)] text-[var(--color-accent)]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16 reveal">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 border border-white/10">
+              <Star className="w-3.5 h-3.5 text-[var(--color-accent)]" /> Customer Stories
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4" style={{ color: 'white' }}>
+              Loved by businesses <span className="text-[var(--color-accent)]">everywhere</span>
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">See why growing businesses choose Chatlync to power their WhatsApp communication.</p>
+          </div>
+
+          {/* Featured Review */}
+          <div className="reveal mb-10">
+            <div className="relative max-w-3xl mx-auto p-8 md:p-12 rounded-3xl bg-white/[0.06] border border-white/10 backdrop-blur-sm">
+              <div className="absolute top-6 right-8 text-[80px] leading-none font-serif text-white/[0.06] select-none">&rdquo;</div>
+              <div className="flex gap-1 mb-6">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star key={s} className="w-5 h-5 fill-[var(--color-accent)] text-[var(--color-accent)]" />
+                ))}
+              </div>
+              <blockquote className="text-xl md:text-2xl font-semibold leading-relaxed text-white/90 mb-8">
+                &ldquo;Chatlync transformed how we handle customer support. Our response time dropped from hours to minutes,
+                and sales through WhatsApp increased by <span className="text-[var(--color-accent)] font-extrabold">340%</span>.
+                The AI chatbot alone handles 60% of inquiries automatically.&rdquo;
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] flex items-center justify-center text-white font-bold text-sm border-2 border-white/20 shadow-lg">AH</div>
+                <div>
+                  <p className="font-bold text-white">Ahmed Hassan</p>
+                  <p className="text-sm text-gray-400">CEO, StyleHub E-commerce</p>
+                </div>
+                <div className="ml-auto hidden sm:flex items-center gap-2 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                  <TrendingUp className="w-3.5 h-3.5" />
+                  340% Sales Increase
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Review Cards Grid */}
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              {
+                name: "Sara Malik",
+                role: "Marketing Head, FreshCart",
+                initials: "SM",
+                gradient: "from-rose-500 to-pink-600",
+                text: "The broadcast feature is incredible. We went from manually messaging customers to reaching 5,000+ at once with personalized campaigns. Open rates are consistently above 85%.",
+                metric: "85% Open Rate",
+              },
+              {
+                name: "Usman Ali",
+                role: "Founder, AutoParts.pk",
+                initials: "UA",
+                gradient: "from-emerald-500 to-teal-600",
+                text: "Abandoned cart recovery alone paid for the subscription 10x over. We're recovering 35% of abandoned carts automatically through WhatsApp — no manual follow-ups needed.",
+                metric: "35% Cart Recovery",
+              },
+              {
+                name: "Fatima Zaidi",
+                role: "Operations, HealthPlus Clinic",
+                initials: "FZ",
+                gradient: "from-violet-500 to-purple-600",
+                text: "Managing appointment reminders and patient follow-ups was a nightmare. Now the chatbot handles it all. We've reduced no-shows by 60% and our staff can focus on care.",
+                metric: "60% Less No-Shows",
+              },
+            ].map((review, i) => (
+              <div key={review.name} className="reveal p-6 rounded-2xl bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] transition-all duration-300 hover:-translate-y-1" style={{ transitionDelay: `${i * 100}ms` }}>
+                <div className="flex gap-1 mb-4">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} className="w-4 h-4 fill-[var(--color-accent)] text-[var(--color-accent)]" />
+                  ))}
+                </div>
+                <p className="text-sm text-gray-300 leading-relaxed mb-6">&ldquo;{review.text}&rdquo;</p>
+                <div className="flex items-center gap-3 pt-4 border-t border-white/[0.06]">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${review.gradient} flex items-center justify-center text-white text-xs font-bold shadow-md`}>
+                    {review.initials}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-bold text-white">{review.name}</p>
+                    <p className="text-xs text-gray-500 truncate">{review.role}</p>
+                  </div>
+                </div>
+                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-3 py-1 rounded-full">
+                  <TrendingUp className="w-3 h-3" />
+                  {review.metric}
+                </div>
+              </div>
             ))}
           </div>
-          <blockquote className="text-2xl md:text-3xl font-bold leading-relaxed mb-10 text-white/95">
-            &ldquo;Chatlync transformed how we handle customer support. Our response time dropped from hours to minutes,
-            and sales through WhatsApp increased by <span className="text-[var(--color-accent)] font-extrabold">340%</span>.
-            The AI chatbot alone handles 60% of inquiries automatically.&rdquo;
-          </blockquote>
-          <div>
-            <div className="w-14 h-14 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-3 text-lg font-bold text-white border-2 border-white/20">
-              AH
+
+          {/* Credibility Badge */}
+          <div className="mt-12 text-center reveal">
+            <div className="inline-flex items-center gap-4 bg-white/[0.04] border border-white/10 rounded-2xl px-6 py-4">
+              <div className="flex -space-x-2">
+                {["AH", "SM", "UA", "FZ"].map((init, i) => (
+                  <div key={init} className="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] flex items-center justify-center text-white text-[10px] font-bold border-2 border-slate-900">{init}</div>
+                ))}
+                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white text-[10px] font-bold border-2 border-slate-900">+</div>
+              </div>
+              <div className="text-left">
+                <div className="flex items-center gap-1">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} className="w-3 h-3 fill-[var(--color-accent)] text-[var(--color-accent)]" />
+                  ))}
+                  <span className="text-white font-bold text-sm ml-1">4.8/5</span>
+                </div>
+                <p className="text-xs text-gray-500">Based on 200+ business reviews</p>
+              </div>
             </div>
-            <p className="font-bold text-white text-lg">Ahmed Hassan</p>
-            <p className="text-white/50 text-sm">CEO, StyleHub E-commerce</p>
           </div>
         </div>
       </section>
