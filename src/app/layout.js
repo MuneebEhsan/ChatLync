@@ -25,7 +25,7 @@ export const metadata = {
     title: "ChatSync — WhatsApp Business API Platform",
     description:
       "The all-in-one WhatsApp Business API platform for businesses. Shared inbox, broadcasts, AI chatbots & more.",
-    images: [{ url: "/images/chatsync-logo-removebg-preview.png", width: 1200, height: 630, alt: "ChatSync" }],
+    images: [{ url: "/images/chatlync-logo-removebg-preview.png", width: 1200, height: 630, alt: "ChatSync" }],
   },
   twitter: {
     card: "summary_large_image",

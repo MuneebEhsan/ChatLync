@@ -5,19 +5,18 @@ const footerLinks = {
   Product: [
     { label: "Features", href: "/features" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Integrations", href: "/features#integrations" },
-    { label: "API Docs", href: "#" },
+    { label: "User Guides & Docs", href: "/docs" },
   ],
   Company: [
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "Careers", href: "#" },
-    { label: "Blog", href: "#" },
+    { label: "Blog", href: "/blog" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
-    { label: "Cookie Policy", href: "#" },
+    { label: "Refund Policy", href: "/refund" },
+    { label: "Cookie Policy", href: "/cookies" },
   ],
 };
 
@@ -55,7 +54,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="col-span-2">
-            <img src="/images/chatsync-logo-removebg-preview.png" alt="ChatSync" className="h-9 w-auto mb-4 brightness-0 invert" />
+            <img src="/images/chatlync-logo-removebg-preview.png" alt="ChatSync" className="h-9 w-auto mb-4 brightness-0 invert" />
             <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-xs">
               The all-in-one WhatsApp Business API platform for modern businesses. Inbox, broadcasts, chatbots, and more.
             </p>

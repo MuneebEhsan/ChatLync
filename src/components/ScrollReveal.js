@@ -14,11 +14,29 @@ export default function ScrollReveal() {
       { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
-    document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => {
-      observer.observe(el);
+    const observeElements = () => {
+      document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale").forEach((el) => {
+        observer.observe(el);
+      });
+    };
+
+    // Observe initial elements on mount
+    observeElements();
+
+    // Set up a MutationObserver to watch the DOM for dynamically added nodes (filtering, search, client navigation)
+    const mutationObserver = new MutationObserver(() => {
+      observeElements();
     });
 
-    return () => observer.disconnect();
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+    };
   }, []);
 
   return null;

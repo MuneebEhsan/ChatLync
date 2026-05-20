@@ -144,7 +144,7 @@ export default function HomePage() {
                     ))}
                   </div>
                   <div className="grid grid-cols-3 gap-4">
-                    <div className="col-span-2 bg-white rounded-xl p-4 border border-gray-100 shadow-sm h-32">
+                    <div className="col-span-2 bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
                       <div className="text-xs font-semibold text-[var(--color-heading)] mb-3">Recent Conversations</div>
                       <div className="space-y-2">
                         {["Ahmed — Order #4521 inquiry", "Sara — Product return request", "Ali — COD confirmation pending"].map((c) => (
@@ -156,7 +156,7 @@ export default function HomePage() {
                         ))}
                       </div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm h-32">
+                    <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
                       <div className="text-xs font-semibold text-[var(--color-heading)] mb-3">Quick Actions</div>
                       <div className="space-y-2">
                         <div className="px-3 py-1.5 bg-[var(--color-primary)]/10 rounded-lg text-xs text-[var(--color-primary)] font-semibold">New Broadcast</div>
