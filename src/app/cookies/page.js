@@ -108,7 +108,7 @@ export default function CookiePage() {
                     <li><strong>Session Cookies:</strong> Temporary files that are immediately discarded once you close your active browser application.</li>
                     <li><strong>Persistent Cookies:</strong> Standard records kept on your browser device for a preset duration, letting our system remember you across multiple browser sessions.</li>
                     <li><strong>First-Party Cookies:</strong> Unique identifiers placed and operated directly by ChatSync domain parameters.</li>
-                    <li><strong>Third-Party Cookies:</strong> Cookies set by external partners (such as Stripe or analysis services) to securely verify payments or compile aggregate telemetry statistics.</li>
+                    <li><strong>Third-Party Cookies:</strong> Cookies set by external partners (such as Paddle or analysis services) to securely verify payments or compile aggregate telemetry statistics.</li>
                   </ul>
                 </section>
 
@@ -158,9 +158,9 @@ export default function CookiePage() {
                       </p>
                     </div>
                     <div className="p-4 bg-slate-50 border border-slate-200/60 rounded-2xl">
-                      <h4 className="font-bold text-slate-900 text-sm mb-1">C. Secure Transaction Cookies (Stripe)</h4>
+                      <h4 className="font-bold text-slate-900 text-sm mb-1">C. Secure Transaction Cookies (Paddle)</h4>
                       <p className="text-xs text-slate-600">
-                        Placed by our secure PCI-compliant processor Stripe. These cookies protect payment transactions, detect fraudulent credit card activities, and authenticate active invoice checkouts securely.
+                        Placed by our secure PCI-compliant processor Paddle. These cookies protect payment transactions, detect fraudulent activities, and authenticate active invoice checkouts securely.
                       </p>
                     </div>
                   </div>

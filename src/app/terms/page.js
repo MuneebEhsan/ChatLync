@@ -164,7 +164,7 @@ export default function TermsPage() {
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong>Free Trial:</strong> Starter plans provide a 7-day free trial. During the trial period, certain features (such as staff invitation limits) may be bounded.</li>
-                    <li><strong>Payment & Processing:</strong> Paid plans are processed securely via verified Stripe integrations. It is the user's responsibility to add active payment cards for standard recurring schedules.</li>
+                    <li><strong>Payment & Processing:</strong> Paid plans are processed securely via Paddle for PCI-DSS compliant payment handling. It is the user's responsibility to maintain active payment accounts for standard recurring schedules.</li>
                     <li><strong>Cancellation:</strong> You can cancel your subscription at any time. Cancellations apply to the end of the current billing cycle. No pro-rated refunds are issued for partial usage.</li>
                   </ul>
                 </section>
