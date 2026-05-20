@@ -44,13 +44,13 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://app.chatlync.io/login"
+            href="https://app.chatsync.pk/login"
             className="px-4 py-2 text-[14px] font-semibold text-[var(--color-body)] hover:text-[var(--color-heading)] transition"
           >
             Log in
           </a>
           <a
-            href="https://app.chatlync.io/signup"
+            href="https://app.chatsync.pk/signup"
             className="px-5 py-2.5 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-[14px] font-semibold rounded-xl transition-all shadow-md shadow-[var(--color-primary)]/20 hover:shadow-lg"
           >
             Start Free Trial
@@ -85,8 +85,8 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
-              <a href="https://app.chatlync.io/login" className="text-center px-4 py-3 text-[15px] font-semibold text-gray-700 hover:bg-gray-50 rounded-xl">Log in</a>
-              <a href="https://app.chatlync.io/signup" className="text-center px-4 py-3 bg-[var(--color-primary)] text-white text-[15px] font-semibold rounded-xl">Start Free Trial</a>
+              <a href="https://app.chatsync.pk/login" className="text-center px-4 py-3 text-[15px] font-semibold text-gray-700 hover:bg-gray-50 rounded-xl">Log in</a>
+              <a href="https://app.chatsync.pk/signup" className="text-center px-4 py-3 bg-[var(--color-primary)] text-white text-[15px] font-semibold rounded-xl">Start Free Trial</a>
             </div>
           </div>
         </div>
