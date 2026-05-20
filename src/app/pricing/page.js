@@ -17,7 +17,7 @@ const plans = [
     features: [
       { text: "1 WhatsApp Business number", ok: true },
       { text: "Shared Team Inbox", ok: true },
-      { text: "Bulk Broadcast Campaigns", ok: true },
+      { text: "Campaign Messaging & Notifications", ok: true },
       { text: "No-Code Bot Builder", ok: true },
       { text: "Message Templates", ok: true },
       { text: "Up to 3 Staff Members", ok: true },

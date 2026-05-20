@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="col-span-2">
             <img src="/images/chatlync-logo-removebg-preview.png" alt="ChatSync" className="h-9 w-auto mb-4 brightness-0 invert" />
             <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-xs">
-              The all-in-one WhatsApp Business API platform for modern businesses. Inbox, broadcasts, chatbots, and more.
+              The all-in-one WhatsApp Business API platform for modern businesses. Inbox, campaigns, chatbots, and more.
             </p>
             <div className="flex items-center gap-3 text-sm text-gray-500">
               <Mail className="w-4 h-4 shrink-0" />

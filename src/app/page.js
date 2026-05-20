@@ -10,7 +10,7 @@ import {
 
 const features = [
   { icon: MessageSquare, title: "Shared Team Inbox", desc: "Manage all WhatsApp conversations in one collaborative inbox with real-time assignment, tags, and notes.", gradient: "from-blue-500 to-indigo-600", slug: "shared-team-inbox" },
-  { icon: Megaphone, title: "Bulk Broadcasts", desc: "Reach thousands with targeted campaigns using rich media, templates, and smart audience segments.", gradient: "from-violet-500 to-purple-600", slug: "broadcast-campaigns" },
+  { icon: Megaphone, title: "Campaign Messaging", desc: "Reach thousands with targeted audience notifications using rich media, templates, and smart segments.", gradient: "from-violet-500 to-purple-600", slug: "campaign-messaging" },
   { icon: Bot, title: "AI Chatbot Builder", desc: "Build powerful no-code chatbot flows with drag-and-drop. AI-powered auto-replies trained on your docs.", gradient: "from-emerald-500 to-teal-600", slug: "no-code-bot-builder" },
   { icon: ShoppingCart, title: "E-commerce Suite", desc: "Abandoned cart recovery, COD verification, order updates — fully automated through WhatsApp.", gradient: "from-orange-500 to-amber-600", slug: "e-commerce-suite" },
   { icon: Users, title: "Team Management", desc: "Add staff with role-based access. Track performance, assign chats, and collaborate seamlessly.", gradient: "from-pink-500 to-rose-600", slug: "staff-role-management" },
@@ -27,7 +27,7 @@ const stats = [
 const steps = [
   { num: "01", title: "Connect Your Number", desc: "Sign up and link your WhatsApp Business number through Meta's secure embedded signup — takes under 5 minutes.", icon: Phone },
   { num: "02", title: "Configure & Customize", desc: "Import contacts, design message templates, build chatbot flows, and set up your team with role-based access.", icon: Layers },
-  { num: "03", title: "Launch & Scale", desc: "Start sending broadcasts, automate conversations, recover abandoned carts, and watch your revenue grow.", icon: TrendingUp },
+  { num: "03", title: "Launch & Scale", desc: "Start sending campaign notifications, automate conversations, recover abandoned carts, and watch your revenue grow.", icon: TrendingUp },
 ];
 
 export default function HomePage() {
@@ -80,7 +80,7 @@ export default function HomePage() {
 
             {/* Sub */}
             <p className="text-lg md:text-xl text-[var(--color-body)] max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up delay-200">
-              One platform to manage your team inbox, send bulk broadcasts, automate with AI chatbots, and drive e-commerce sales — all through the WhatsApp Business API.
+              One platform to manage your team inbox, deliver campaign notifications, automate with AI chatbots, and drive e-commerce sales — all through the WhatsApp Business API.
             </p>
 
             {/* CTAs */}
@@ -133,7 +133,7 @@ export default function HomePage() {
                     {[
                       { label: "Total Chats", val: "1,247", color: "bg-blue-500" },
                       { label: "Open", val: "38", color: "bg-green-500" },
-                      { label: "Broadcasts", val: "12", color: "bg-purple-500" },
+                      { label: "Campaigns", val: "12", color: "bg-purple-500" },
                       { label: "Bot Sessions", val: "892", color: "bg-amber-500" },
                     ].map((s) => (
                       <div key={s.label} className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
@@ -159,7 +159,7 @@ export default function HomePage() {
                     <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
                       <div className="text-xs font-semibold text-[var(--color-heading)] mb-3">Quick Actions</div>
                       <div className="space-y-2">
-                        <div className="px-3 py-1.5 bg-[var(--color-primary)]/10 rounded-lg text-xs text-[var(--color-primary)] font-semibold">New Broadcast</div>
+                        <div className="px-3 py-1.5 bg-[var(--color-primary)]/10 rounded-lg text-xs text-[var(--color-primary)] font-semibold">New Campaign</div>
                         <div className="px-3 py-1.5 bg-emerald-50 rounded-lg text-xs text-emerald-600 font-semibold">Send Template</div>
                         <div className="px-3 py-1.5 bg-amber-50 rounded-lg text-xs text-amber-600 font-semibold">View Analytics</div>
                       </div>
@@ -369,7 +369,7 @@ export default function HomePage() {
                 role: "Marketing Head, FreshCart — Karachi",
                 initials: "SM",
                 gradient: "from-rose-500 to-pink-600",
-                text: "The broadcast feature is incredible. We went from manually messaging customers to reaching 5,000+ at once with personalized campaigns. Open rates are consistently above 85%.",
+                text: "The campaign messaging feature is incredible. We went from manually messaging customers to reaching 5,000+ at once with personalized campaigns. Open rates are consistently above 85%.",
                 metric: "85% Open Rate",
               },
               {

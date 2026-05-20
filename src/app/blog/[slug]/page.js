@@ -164,7 +164,7 @@ export default async function BlogPostPage({ params }) {
                     <Sparkles className="w-3 h-3" /> Growth Platform
                   </span>
                   <h3 className="text-lg md:text-xl font-bold tracking-tight text-white leading-tight">
-                    Scale your WhatsApp broadcasts automatically
+                    Scale your WhatsApp campaigns automatically
                   </h3>
                   <p className="text-slate-300 text-xs leading-relaxed">
                     Connect your WhatsApp number, automate abandoned cart follow-ups, and get a shared team inbox with ChatSync.

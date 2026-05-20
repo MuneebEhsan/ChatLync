@@ -8,7 +8,7 @@ import {
 
 export const metadata = {
   title: "Features",
-  description: "Explore ChatSync's powerful WhatsApp Business API features: shared team inbox, bulk broadcasts, AI chatbots, e-commerce automations, and more.",
+  description: "Explore ChatSync's powerful WhatsApp Business API features: shared team inbox, campaign messaging, AI chatbots, e-commerce automations, and more.",
   alternates: { canonical: "https://chatsync.pk/features" },
 };
 
@@ -19,7 +19,7 @@ const features = [
     highlights: ["Real-time chat with typing indicators", "Smart chat assignment & routing", "Internal notes & quick replies", "Contact profiles with full history"],
   },
   {
-    icon: Megaphone, title: "Broadcast Campaigns", tag: "Marketing", gradient: "from-violet-500 to-purple-600",
+    icon: Megaphone, title: "Campaign Messaging", tag: "Marketing", gradient: "from-violet-500 to-purple-600",
     desc: "Send targeted WhatsApp campaigns to thousands with rich media, buttons, and smart audience segmentation. Track delivery and read rates in real-time.",
     highlights: ["Template-based messaging", "CSV import & audience segmentation", "Scheduled campaigns", "Delivery & read rate analytics"],
   },
@@ -45,8 +45,8 @@ const features = [
   },
   {
     icon: Tags, title: "Contact Tags & CRM", tag: "CRM", gradient: "from-lime-500 to-green-600",
-    desc: "Organize contacts with custom color-coded tags, attributes, and segments. Build targeted audiences for personalized broadcast campaigns.",
-    highlights: ["Custom tags & attributes", "Smart contact segmentation", "Bulk import/export", "Tag-based automation triggers"],
+    desc: "Organize contacts with custom color-coded tags, attributes, and segments. Build targeted audiences for personalized campaigns.",
+    highlights: ["Custom tags & attributes", "Smart contact segmentation", "Contact import/export", "Tag-based automation triggers"],
   },
   {
     icon: Smartphone, title: "Multi-Number Support", tag: "Enterprise", gradient: "from-gray-600 to-gray-800",

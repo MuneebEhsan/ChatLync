@@ -18,7 +18,7 @@ const values = [
 
 const milestones = [
   { year: "2024", title: "Idea Born", desc: "Identified the gap in affordable WhatsApp Business API tools for emerging markets." },
-  { year: "2024", title: "MVP Launch", desc: "Launched with shared inbox, broadcasts, and basic automation capabilities." },
+  { year: "2024", title: "MVP Launch", desc: "Launched with shared inbox, campaigns, and basic automation capabilities." },
   { year: "2025", title: "AI Integration", desc: "Added RAG-powered AI chatbots, knowledge base, and smart auto-replies." },
   { year: "2025", title: "E-commerce Suite", desc: "Shopify & WooCommerce integration with cart recovery and order tracking." },
   { year: "2026", title: "Scale & Growth", desc: "Multi-number support, enterprise features, serving thousands of businesses." },

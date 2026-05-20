@@ -102,7 +102,7 @@ export default function TermsPage() {
                     <h2 className="text-xl md:text-2xl font-bold text-slate-900 tracking-tight">2. Service Description & Regional Restraints</h2>
                   </div>
                   <p>
-                    ChatSync provides a specialized multi-tenant customer relationship suite designed for managing customer support, marketing, broadcasts, and automated chatbots through official integrations with Meta's Cloud API infrastructure.
+                    ChatSync provides a specialized multi-tenant customer relationship suite designed for managing customer support, marketing, campaigns, and automated chatbots through official integrations with Meta's Cloud API infrastructure.
                   </p>
                   <div className="p-4.5 bg-amber-50/70 border border-amber-200/50 rounded-2xl text-amber-900 text-sm space-y-2">
                     <p className="font-bold flex items-center gap-1.5">
@@ -127,7 +127,7 @@ export default function TermsPage() {
                     As a user of our integration services, you represent and warrant that you will strictly comply with all WhatsApp Business Terms of Service, Meta Developer Policies, and standard Meta Commerce Policies.
                   </p>
                   <p>
-                    Any suspension, rate-limit restriction, or account ban initiated by Meta Platforms, Inc. against your WhatsApp Business Account (WABA) due to non-compliant broadcasts, spam reporting, or unsolicited message templates is your sole responsibility. ChatSync does not provide refunds or claim liability for bans induced by user policy violations.
+                    Any suspension, rate-limit restriction, or account ban initiated by Meta Platforms, Inc. against your WhatsApp Business Account (WABA) due to non-compliant campaigns, spam reporting, or unsolicited message templates is your sole responsibility. ChatSync does not provide refunds or claim liability for bans induced by user policy violations.
                   </p>
                 </section>
 

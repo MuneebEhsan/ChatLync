@@ -11,7 +11,7 @@ import {
 
 export const metadata = {
   title: "Official Documentation & Setup Guides | ChatSync",
-  description: "Exhaustive, step-by-step documentation for ChatSync. Learn how to link WhatsApp API, assign staff roles, build drag-and-drop AI chatbots, connect e-commerce stores, and dispatch marketing broadcasts.",
+  description: "Exhaustive, step-by-step documentation for ChatSync. Learn how to link WhatsApp API, assign staff roles, build drag-and-drop AI chatbots, connect e-commerce stores, and dispatch marketing campaigns.",
   alternates: { canonical: "https://www.chatsync.pk/docs" },
   openGraph: {
     title: "ChatSync Exhaustive Documentation & Knowledge Base",
@@ -29,7 +29,7 @@ export default function DocsPage() {
     { id: "inbox", label: "3. Shared Inbox & Staff", icon: Users },
     { id: "chatbot", label: "4. No-Code AI Chatbot", icon: Bot },
     { id: "ecommerce", label: "5. E-commerce Integration", icon: ShoppingCart },
-    { id: "broadcasts", label: "6. Broadcasts & Campaigns", icon: Megaphone },
+    { id: "broadcasts", label: "6. Campaigns & Engagement", icon: Megaphone },
     { id: "subscriptions", label: "7. Trial & Subscription Billing", icon: Crown },
     { id: "security", label: "8. Data Security & Multi-Tenancy", icon: Shield },
   ];
@@ -123,7 +123,7 @@ export default function DocsPage() {
                       <strong>ChatSync</strong> is an official Meta Business Solution Tech Provider designed specifically for high-growth enterprises and e-commerce brands in Pakistan. We bridge the gap between official WhatsApp Cloud API channels and your operational workflows.
                     </p>
                     <p>
-                      Traditional methods like using WhatsApp Business Web or personal apps restrict you to a single concurrent user, lack automated recovery nodes, and run constant, severe block risks if you attempt message broadcasts. ChatSync solves this by offering a fully unified workspace:
+                      Traditional methods like using WhatsApp Business Web or personal apps restrict you to a single concurrent user, lack automated recovery nodes, and run constant, severe block risks if you attempt high-volume campaigns without proper systems. ChatSync solves this by offering a fully unified workspace:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                       <div className="p-4 bg-slate-50 rounded-xl border border-slate-100 flex gap-3">
@@ -260,7 +260,7 @@ export default function DocsPage() {
                           <strong>Utilize Private Internal Notes:</strong> To collaborate on complex questions, click the yellow <strong>"Note"</strong> icon below the input box. Type your private note (e.g. <em>"Checked CRM, this user is waiting for size L replacement"</em>) and click <strong>Add</strong>. These are highlighted in yellow and are strictly invisible to the client.
                         </li>
                         <li>
-                          <strong>Apply CRM Tag Labels:</strong> In the right sidebar card of an active chat, scroll to <strong>Tags</strong>, click the <strong>"+"</strong> icon, and assign tags (e.g. <code>"Urgent Request"</code>, <code>"VIP Seller"</code>, <code>"Shopify Unpaid"</code>). This allows you to filter segments for broadcast marketing campaigns later.
+                          <strong>Apply CRM Tag Labels:</strong> In the right sidebar card of an active chat, scroll to <strong>Tags</strong>, click the <strong>"+"</strong> icon, and assign tags (e.g. <code>"Urgent Request"</code>, <code>"VIP Seller"</code>, <code>"Shopify Unpaid"</code>). This allows you to filter segments for targeted marketing campaigns later.
                         </li>
                         <li>
                           <strong>Resolve Conversations:</strong> Once a customer inquiry is answered, click the green <strong>"Resolve"</strong> checkmark button at the top header of the chat. This archives the thread out of your workspace view, keeping your team focused on active customer tickets.
@@ -409,13 +409,13 @@ export default function DocsPage() {
 
                 <hr className="border-slate-100" />
 
-                {/* 6. Broadcasts & Campaigns */}
+                {/* 6. Campaigns & Engagement */}
                 <section id="broadcasts" className="reveal scroll-mt-28 space-y-6">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
                       <Megaphone className="w-5 h-5" />
                     </div>
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-900 tracking-tight">6. Bulk Broadcasts & Campaign Marketing</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-900 tracking-tight">6. Campaign Messaging & Customer Engagement</h2>
                   </div>
 
                   <div className="space-y-4">
@@ -424,7 +424,7 @@ export default function DocsPage() {
                         <span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> The Purpose
                       </h3>
                       <p className="text-slate-600 text-sm">
-                        Broadcast targeted campaigns to thousands of verified phone contacts simultaneously. ChatSync enables marketing operators to submit design templates, segment clients by CRM tags, schedule deliveries, and track real-time read analytics without any message limits.
+                        Deliver targeted campaigns to thousands of verified phone contacts simultaneously. ChatSync enables marketing operators to submit design templates, segment clients by CRM tags, schedule deliveries, and track real-time read analytics without any message limits.
                       </p>
                     </div>
 
@@ -434,7 +434,7 @@ export default function DocsPage() {
                       </h3>
                       <ol className="list-decimal pl-5 space-y-4 text-slate-600 text-sm">
                         <li>
-                          <strong>Create and Submit a Message Template:</strong> Navigate to <strong>Broadcasts &gt; Templates</strong> and click <strong>"+ Create Template"</strong>.
+                          <strong>Create and Submit a Message Template:</strong> Navigate to <strong>Campaigns &gt; Templates</strong> and click <strong>"+ Create Template"</strong>.
                           <ul className="list-disc pl-5 mt-2 space-y-2 text-xs text-slate-500">
                             <li>Name your template (use lowercase and underscores, e.g. <code>summer_sale_campaign</code>), select category as <strong>"Marketing"</strong>, and choose your language.</li>
                             <li>Write the text copy in the editor. To add personalized dynamics, click <strong>"Add Variable"</strong> to insert parameters like <code>{"{{1}}"}</code>.</li>
@@ -447,7 +447,7 @@ export default function DocsPage() {
                           <strong>Filter Your Audience Segment:</strong> In your <strong>Contacts CRM</strong>, filter user profiles based on tags (e.g. customer tag matches <code>"VIP Customer"</code>), or click <strong>"Import Contacts"</strong> to upload a CSV sheet containing columns like <code>phone</code>, <code>first_name</code>, and <code>city</code>.
                         </li>
                         <li>
-                          <strong>Establish a Campaign:</strong> Go to <strong>Broadcasts &gt; Campaigns</strong> and click <strong>"New Campaign"</strong>.
+                          <strong>Establish a Campaign:</strong> Go to <strong>Campaigns</strong> and click <strong>"New Campaign"</strong>.
                         </li>
                         <li>
                           <strong>Select Template & Map Parameters:</strong> Select your approved marketing template. In the parameter mapping boxes, map the dynamic variable fields: Map <code>{"{{1}}"}</code> to the CRM column <code>first_name</code> so the recipient gets a customized name greeting.
@@ -456,7 +456,7 @@ export default function DocsPage() {
                           <strong>Select Recipients:</strong> Choose your previously saved CRM segments, or select the uploaded CSV list.
                         </li>
                         <li>
-                          <strong>Schedule and Launch:</strong> Set the broadcast parameters. Choose <strong>"Send Immediately"</strong>, or select <strong>"Schedule for Later"</strong> and configure your target date and time (e.g. 8:00 PM when mobile read volumes spike). Click <strong>Submit Campaign</strong>.
+                          <strong>Schedule and Launch:</strong> Set the campaign parameters. Choose <strong>"Send Immediately"</strong>, or select <strong>"Schedule for Later"</strong> and configure your target date and time (e.g. 8:00 PM when mobile read volumes spike). Click <strong>Submit Campaign</strong>.
                         </li>
                       </ol>
                     </div>
@@ -512,7 +512,7 @@ export default function DocsPage() {
                               <td className="px-4 py-3.5 font-bold text-slate-900">Starter Plan</td>
                               <td className="px-4 py-3.5 font-semibold text-indigo-600">Rs. 4,000 / mo</td>
                               <td className="px-4 py-3.5 text-slate-500">Max 3 Agents</td>
-                              <td className="px-4 py-3.5 text-slate-500">Shared inbox, contacts CRM, manual broadcasting, welcome/away automated quick replies. <span className="text-red-500 font-medium">Shopify/WooCommerce integrations and RAG AI features are strictly disabled.</span></td>
+                              <td className="px-4 py-3.5 text-slate-500">Shared inbox, contacts CRM, manual campaigns, welcome/away automated quick replies. <span className="text-red-500 font-medium">Shopify/WooCommerce integrations and RAG AI features are strictly disabled.</span></td>
                             </tr>
                             <tr>
                               <td className="px-4 py-3.5 font-bold text-slate-900">Growth Plan</td>
@@ -590,7 +590,7 @@ export default function DocsPage() {
                           <strong>Strict Organizational Isolation:</strong> Upon tenant signup, our system generates a unique, cryptographically secure <strong>Organization ID</strong> (e.g. <code>org_9f82d1c...</code>). Absolutely every customer contact, chatbot flow node, and message record created by your workspace is permanently stamped with this ID in the database.
                         </li>
                         <li>
-                          <strong>The Invisible Query Barrier:</strong> The ChatSync core backend applies automatic global query filters. When you access your shared inbox or dispatch a broadcast, the server identifies your authenticated login session, extracts your verified <strong>Organization ID</strong>, and locks it into the database request query. It is mathematically impossible for another business owner to view your CRM database because our servers reject any query that does not perfectly match the organization keys.
+                          <strong>The Invisible Query Barrier:</strong> The ChatSync core backend applies automatic global query filters. When you access your shared inbox or dispatch a campaign, the server identifies your authenticated login session, extracts your verified <strong>Organization ID</strong>, and locks it into the database request query. It is mathematically impossible for another business owner to view your CRM database because our servers reject any query that does not perfectly match the organization keys.
                         </li>
                         <li>
                           <strong>Central Tech Provider Webhook Routing:</strong> Because ChatSync acts as an official centralized Tech Provider, Meta registers our single corporate webhook address to receive all incoming messages. When customer texts arrive:

@@ -3,15 +3,15 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL("https://chatsync.pk"),
   title: {
-    default: "ChatSync — WhatsApp Business API Platform | Team Inbox, Broadcasts & AI Chatbots",
+    default: "ChatSync — WhatsApp Business API Platform | Team Inbox, Campaigns & AI Chatbots",
     template: "%s | ChatSync",
   },
   description:
-    "The all-in-one WhatsApp Business API platform. Shared team inbox, bulk broadcasts, AI chatbots, e-commerce automations, and CRM integrations. Start your 7-day free trial.",
+    "The all-in-one WhatsApp Business API platform. Shared team inbox, campaign messaging, AI chatbots, e-commerce automations, and CRM integrations. Start your 7-day free trial.",
   keywords: [
     "WhatsApp Business API",
     "WhatsApp team inbox",
-    "WhatsApp bulk messaging",
+    "WhatsApp campaign messaging",
     "WhatsApp chatbot",
     "WhatsApp CRM",
     "WhatsApp automation",
@@ -24,13 +24,13 @@ export const metadata = {
     siteName: "ChatSync",
     title: "ChatSync — WhatsApp Business API Platform",
     description:
-      "The all-in-one WhatsApp Business API platform for businesses. Shared inbox, broadcasts, AI chatbots & more.",
-    images: [{ url: "/images/chatlync-logo-removebg-preview.png", width: 1200, height: 630, alt: "ChatSync" }],
+      "The all-in-one WhatsApp Business API platform for businesses. Shared inbox, campaigns, AI chatbots & more.",
+    images: [{ url: "/images/chatsync-logo-removebg-preview.png", width: 1200, height: 630, alt: "ChatSync" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChatSync — WhatsApp Business API Platform",
-    description: "Shared inbox, broadcasts, AI chatbots & e-commerce automations for WhatsApp Business.",
+    description: "Shared inbox, campaigns, AI chatbots & e-commerce automations for WhatsApp Business.",
   },
   verification: {
     google: "your-google-verification-code",

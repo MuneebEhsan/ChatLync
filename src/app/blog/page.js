@@ -63,7 +63,7 @@ export default function BlogPage() {
                 Get WhatsApp growth tactics directly in your inbox.
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Join 5,000+ scaling operators. No spam, only actionable insights on automated broadcasts, chatbots, and templates.
+                Join 5,000+ scaling operators. No spam, only actionable insights on automated campaigns, chatbots, and templates.
               </p>
             </div>
 

@@ -105,7 +105,7 @@ export default function RefundPage() {
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li>A fully featured <strong>7-day free trial</strong> requiring <strong>no credit card information</strong>.</li>
-                    <li>Full access to standard team inbox components, bulk broadcasts, and our drag-and-drop chatbot builder.</li>
+                    <li>Full access to standard team inbox components, campaign messaging, and our drag-and-drop chatbot builder.</li>
                     <li>Complimentary setup guidance from our technical team.</li>
                   </ul>
                   <p>
