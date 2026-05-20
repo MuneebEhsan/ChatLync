@@ -185,7 +185,7 @@ export default function PrivacyPage() {
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li><strong>Hosting Infrastructures:</strong> Secure enterprise cloud servers.</li>
-                    <li><strong>Payment Gateways:</strong> Paddle for PCI-DSS compliant payment handling.</li>
+                    <li><strong>Payment Gateways:</strong> SafePay for PCI-DSS compliant payment handling.</li>
                     <li><strong>Telemetry & Diagnostics:</strong> Anonymous logging for speed diagnostics.</li>
                   </ul>
                 </section>
