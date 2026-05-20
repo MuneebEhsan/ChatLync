@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://chatlync.io";
+  const baseUrl = "https://www.chatsync.pk";
 
   return [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },

@@ -3,6 +3,6 @@ export default function robots() {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/api/", "/_next/"] },
     ],
-    sitemap: "https://chatlync.io/sitemap.xml",
+    sitemap: "https://chatsync.pk/sitemap.xml",
   };
 }

@@ -8,8 +8,8 @@ import {
 
 export const metadata = {
   title: "Features",
-  description: "Explore Chatlync's powerful WhatsApp Business API features: shared team inbox, bulk broadcasts, AI chatbots, e-commerce automations, and more.",
-  alternates: { canonical: "https://chatlync.io/features" },
+  description: "Explore ChatSync's powerful WhatsApp Business API features: shared team inbox, bulk broadcasts, AI chatbots, e-commerce automations, and more.",
+  alternates: { canonical: "https://chatsync.pk/features" },
 };
 
 const features = [
@@ -93,7 +93,7 @@ export default function FeaturesPage() {
               const Icon = f.icon;
               const isReversed = i % 2 !== 0;
               return (
-                <div key={f.title} className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-12 md:gap-20`}>
+                <div key={f.title} id={f.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')} className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-12 md:gap-20 scroll-mt-28`}>
                   {/* Info */}
                   <div className={`flex-1 ${isReversed ? 'reveal-right' : 'reveal-left'}`}>
                     <div className={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4 bg-gradient-to-r ${f.gradient} text-white`}>
@@ -153,7 +153,7 @@ export default function FeaturesPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <h2 className="text-3xl md:text-4xl font-black text-[var(--color-heading)] mb-5">Ready to get started?</h2>
             <p className="text-[var(--color-body)] mb-8">Try all features free for 7 days. No credit card required.</p>
-            <a href="https://app.chatlync.io/signup" className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-bold rounded-2xl transition-all shadow-lg shadow-[var(--color-primary)]/20 hover:shadow-xl text-[16px]">
+            <a href="https://app.chatsync.pk/signup" className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-bold rounded-2xl transition-all shadow-lg shadow-[var(--color-primary)]/20 hover:shadow-xl text-[16px]">
               Start Free Trial <ArrowRight className="w-4 h-4" />
             </a>
           </div>

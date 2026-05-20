@@ -5,12 +5,12 @@ import { Mail, MessageSquare, Clock, Send, Sparkles } from "lucide-react";
 
 export const metadata = {
   title: "Contact",
-  description: "Get in touch with the Chatlync team for sales inquiries, technical support, partnerships, and more.",
-  alternates: { canonical: "https://chatlync.io/contact" },
+  description: "Get in touch with the ChatSync team for sales inquiries, technical support, partnerships, and more.",
+  alternates: { canonical: "https://chatsync.pk/contact" },
 };
 
 const contactInfo = [
-  { icon: Mail, title: "Email Us", detail: "hello@chatlync.io", sub: "We'll respond within 24 hours", gradient: "from-blue-500 to-indigo-600" },
+  { icon: Mail, title: "Email Us", detail: "hello@chatsync.pk", sub: "We'll respond within 24 hours", gradient: "from-blue-500 to-indigo-600" },
   { icon: MessageSquare, title: "WhatsApp", detail: "+92 315 4239421", sub: "Chat with us directly", gradient: "from-emerald-500 to-teal-600" },
   { icon: Clock, title: "Support Hours", detail: "Mon – Sat, 9AM – 9PM PKT", sub: "24/7 for Business plan", gradient: "from-violet-500 to-purple-600" },
 ];

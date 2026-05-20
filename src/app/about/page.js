@@ -5,8 +5,8 @@ import { Target, Eye, Heart, Lightbulb, Users, Globe, Sparkles, ArrowRight } fro
 
 export const metadata = {
   title: "About",
-  description: "Learn about Chatlync — our mission to help businesses grow through intelligent WhatsApp communication.",
-  alternates: { canonical: "https://chatlync.io/about" },
+  description: "Learn about ChatSync — our mission to help businesses grow through intelligent WhatsApp communication.",
+  alternates: { canonical: "https://chatsync.pk/about" },
 };
 
 const values = [
@@ -43,7 +43,7 @@ export default function AboutPage() {
               <span className="gradient-text">for every business</span>
             </h1>
             <p className="text-lg text-[var(--color-body)] max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              Chatlync was born from a simple observation: businesses in emerging markets deserved the same powerful
+              ChatSync was born from a simple observation: businesses in emerging markets deserved the same powerful
               WhatsApp Business tools as enterprise companies — without the enterprise price tag.
             </p>
           </div>

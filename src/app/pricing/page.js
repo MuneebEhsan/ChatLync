@@ -32,8 +32,8 @@ const plans = [
   {
     name: "Growth",
     desc: "For established stores scaling their WhatsApp operations and sales.",
-    monthly: 8000,
-    yearly: 80000,
+    monthly: 8500,
+    yearly: 85000,
     icon: Crown,
     gradient: "from-violet-500 to-purple-600",
     popular: true,
@@ -54,8 +54,8 @@ const plans = [
   {
     name: "Business",
     desc: "Advanced AI routing & maximum platform limits for high-volume teams.",
-    monthly: 16000,
-    yearly: 160000,
+    monthly: 18000,
+    yearly: 180000,
     icon: Building2,
     gradient: "from-gray-700 to-gray-900",
     features: [
@@ -77,8 +77,10 @@ const plans = [
 const faqs = [
   { q: "What happens after the 7-day free trial?", a: "Your account will automatically switch to your selected plan. If you don't add a payment method, your account will be paused — no surprise charges." },
   { q: "Can I change plans later?", a: "Absolutely! Upgrade or downgrade anytime from your dashboard. Changes take effect immediately with prorated billing." },
-  { q: "Are WhatsApp conversation charges included?", a: "No. Meta charges per-conversation fees separately (marketing, utility, service). The Chatlync subscription covers platform access only." },
-  { q: "Do you offer custom enterprise plans?", a: "Yes! Contact our sales team for custom pricing, dedicated infrastructure, SLA guarantees, and white-label options." },
+  { q: "Are WhatsApp conversation charges included?", a: "No. Meta charges per-conversation fees separately (marketing, utility, service). The ChatSync subscription covers platform access only." },
+  { q: "What payment methods do you accept?", a: "We support JazzCash, Easypaisa, local bank transfers (SadaBiz), and major debit/credit cards. Small businesses can pay directly from their mobile wallets — just enter your number, receive a prompt, and approve." },
+  { q: "Can I use any Pakistani WhatsApp number?", a: "Yes! Any Pakistani mobile number starting with +92 (e.g., 0300, 0301, 0321, 0333 series) can be connected. The number must be a verified WhatsApp Business number through Meta's embedded signup." },
+  { q: "Do you offer custom enterprise plans?", a: "Yes! Contact our sales team for custom pricing, dedicated infrastructure, SLA guarantees, and white-label options tailored for large Pakistani enterprises." },
   { q: "Is there a setup fee?", a: "Never. Zero setup fees, zero hidden charges. Sign up, connect your number, and start sending in minutes." },
 ];
 
@@ -206,7 +208,7 @@ export default function PricingPage() {
 
                     {/* CTA */}
                     <a
-                      href="https://app.chatlync.io/signup"
+                      href="https://app.chatsync.pk/signup"
                       className={`w-full py-3.5 rounded-xl text-center font-bold text-[15px] transition-all flex items-center justify-center gap-2 ${
                         plan.popular
                           ? "bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white shadow-lg shadow-[var(--color-primary)]/20 hover:shadow-xl"

@@ -9,12 +9,12 @@ import {
 } from "lucide-react";
 
 const features = [
-  { icon: MessageSquare, title: "Shared Team Inbox", desc: "Manage all WhatsApp conversations in one collaborative inbox with real-time assignment, tags, and notes.", gradient: "from-blue-500 to-indigo-600" },
-  { icon: Megaphone, title: "Bulk Broadcasts", desc: "Reach thousands with targeted campaigns using rich media, templates, and smart audience segments.", gradient: "from-violet-500 to-purple-600" },
-  { icon: Bot, title: "AI Chatbot Builder", desc: "Build powerful no-code chatbot flows with drag-and-drop. AI-powered auto-replies trained on your docs.", gradient: "from-emerald-500 to-teal-600" },
-  { icon: ShoppingCart, title: "E-commerce Suite", desc: "Abandoned cart recovery, COD verification, order updates — fully automated through WhatsApp.", gradient: "from-orange-500 to-amber-600" },
-  { icon: Users, title: "Team Management", desc: "Add staff with role-based access. Track performance, assign chats, and collaborate seamlessly.", gradient: "from-pink-500 to-rose-600" },
-  { icon: BarChart3, title: "Live Analytics", desc: "Track delivery, read rates, response times, and campaign ROI with beautiful real-time dashboards.", gradient: "from-cyan-500 to-blue-600" },
+  { icon: MessageSquare, title: "Shared Team Inbox", desc: "Manage all WhatsApp conversations in one collaborative inbox with real-time assignment, tags, and notes.", gradient: "from-blue-500 to-indigo-600", slug: "shared-team-inbox" },
+  { icon: Megaphone, title: "Bulk Broadcasts", desc: "Reach thousands with targeted campaigns using rich media, templates, and smart audience segments.", gradient: "from-violet-500 to-purple-600", slug: "broadcast-campaigns" },
+  { icon: Bot, title: "AI Chatbot Builder", desc: "Build powerful no-code chatbot flows with drag-and-drop. AI-powered auto-replies trained on your docs.", gradient: "from-emerald-500 to-teal-600", slug: "no-code-bot-builder" },
+  { icon: ShoppingCart, title: "E-commerce Suite", desc: "Abandoned cart recovery, COD verification, order updates — fully automated through WhatsApp.", gradient: "from-orange-500 to-amber-600", slug: "e-commerce-suite" },
+  { icon: Users, title: "Team Management", desc: "Add staff with role-based access. Track performance, assign chats, and collaborate seamlessly.", gradient: "from-pink-500 to-rose-600", slug: "staff-role-management" },
+  { icon: BarChart3, title: "Live Analytics", desc: "Track delivery, read rates, response times, and campaign ROI with beautiful real-time dashboards.", gradient: "from-cyan-500 to-blue-600", slug: "contact-tags-crm" },
 ];
 
 const stats = [
@@ -52,10 +52,17 @@ export default function HomePage() {
           <div className="text-center max-w-5xl mx-auto">
             {/* Badge */}
             <div className="inline-flex items-center gap-3 glass rounded-full px-5 py-2.5 mb-8 animate-fade-in-down shadow-sm border border-gray-200/50">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta" className="h-4 w-auto opacity-70" />
+              <div className="flex items-center gap-1.5">
+                <svg viewBox="0 0 24 24" fill="#0668E1" className="h-4.5 w-auto shrink-0" style={{ height: '18px' }}>
+                  <path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z" />
+                </svg>
+                <span className="text-sm font-bold text-gray-900 tracking-tight">Meta</span>
+              </div>
               <div className="w-px h-4 bg-gray-300"></div>
               <div className="flex items-center gap-1.5">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/20px-WhatsApp.svg.png" alt="WhatsApp" className="w-4 h-4" />
+                <svg viewBox="0 0 16 16" fill="#25D366" className="w-4 h-4 shrink-0">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
                 <span className="text-sm font-semibold text-[var(--color-heading)]">Official Business API Partner</span>
               </div>
               <div className="flex items-center gap-1 bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">
@@ -79,7 +86,7 @@ export default function HomePage() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400">
               <a
-                href="https://app.chatlync.io/signup"
+                href="https://app.chatsync.pk/signup"
                 className="group relative px-8 py-4 bg-[var(--color-primary)] text-white text-[16px] font-bold rounded-2xl transition-all shadow-xl shadow-[var(--color-primary)]/25 hover:shadow-2xl hover:shadow-[var(--color-primary)]/30 hover:scale-[1.02] flex items-center justify-center gap-2 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
@@ -117,7 +124,7 @@ export default function HomePage() {
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
                   </div>
                   <div className="flex-1 mx-4">
-                    <div className="bg-white rounded-lg px-3 py-1.5 text-xs text-gray-400 border border-gray-200 max-w-xs mx-auto text-center">app.chatlync.io/dashboard</div>
+                    <div className="bg-white rounded-lg px-3 py-1.5 text-xs text-gray-400 border border-gray-200 max-w-xs mx-auto text-center">app.chatsync.pk/dashboard</div>
                   </div>
                 </div>
                 {/* Mock dashboard */}
@@ -140,7 +147,7 @@ export default function HomePage() {
                     <div className="col-span-2 bg-white rounded-xl p-4 border border-gray-100 shadow-sm h-32">
                       <div className="text-xs font-semibold text-[var(--color-heading)] mb-3">Recent Conversations</div>
                       <div className="space-y-2">
-                        {["Ahmed — Order #4521 inquiry", "Sara — Product return request", "Ali — Delivery status check"].map((c) => (
+                        {["Ahmed — Order #4521 inquiry", "Sara — Product return request", "Ali — COD confirmation pending"].map((c) => (
                           <div key={c} className="flex items-center gap-2">
                             <div className="w-6 h-6 rounded-full bg-[var(--color-primary)]/10 shrink-0"></div>
                             <div className="text-xs text-[var(--color-body)] truncate">{c}</div>
@@ -203,7 +210,12 @@ export default function HomePage() {
             {features.map((f, i) => {
               const Icon = f.icon;
               return (
-                <div key={f.title} className={`reveal group relative p-7 rounded-2xl border border-gray-100 bg-white card-hover overflow-hidden`} style={{ transitionDelay: `${i * 80}ms` }}>
+                <Link
+                  key={f.title}
+                  href={`/features#${f.slug}`}
+                  className="reveal block group relative p-7 rounded-2xl border border-gray-100 bg-white card-hover overflow-hidden cursor-pointer"
+                  style={{ transitionDelay: `${i * 80}ms` }}
+                >
                   {/* Hover gradient bg */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${f.gradient} opacity-0 group-hover:opacity-[0.04] transition-opacity duration-500`}></div>
                   <div className="relative">
@@ -216,7 +228,7 @@ export default function HomePage() {
                       Learn more <ChevronRight className="w-4 h-4" />
                     </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
@@ -267,10 +279,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-14 reveal">
             <div className="inline-flex items-center gap-2 bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
-              <Globe className="w-3.5 h-3.5" /> Trusted Worldwide
+              <Globe className="w-3.5 h-3.5" /> Trusted Across Pakistan
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-[var(--color-heading)] tracking-tight">
-              Powering businesses across industries
+              Powering Pakistani businesses across industries
             </h2>
           </div>
 
@@ -282,8 +294,8 @@ export default function HomePage() {
               { name: "Education", count: "120+", icon: Users, gradient: "from-violet-500 to-purple-500" },
               { name: "Restaurants", count: "180+", icon: Star, gradient: "from-rose-500 to-pink-500" },
               { name: "Travel & Tourism", count: "90+", icon: Send, gradient: "from-cyan-500 to-blue-500" },
-              { name: "Fitness & Wellness", count: "75+", icon: Zap, gradient: "from-lime-500 to-green-500" },
-              { name: "SaaS Companies", count: "60+", icon: Layers, gradient: "from-gray-600 to-gray-800" },
+              { name: "Clothing & Fashion", count: "210+", icon: Zap, gradient: "from-lime-500 to-green-500" },
+              { name: "Auto Parts", count: "75+", icon: Layers, gradient: "from-gray-600 to-gray-800" },
             ].map((item, i) => {
               const Icon = item.icon;
               return (
@@ -318,7 +330,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4" style={{ color: 'white' }}>
               Loved by businesses <span className="text-[var(--color-accent)]">everywhere</span>
             </h2>
-            <p className="text-gray-400 max-w-xl mx-auto">See why growing businesses choose Chatlync to power their WhatsApp communication.</p>
+            <p className="text-gray-400 max-w-xl mx-auto">See why growing businesses choose ChatSync to power their WhatsApp communication.</p>
           </div>
 
           {/* Featured Review */}
@@ -331,7 +343,7 @@ export default function HomePage() {
                 ))}
               </div>
               <blockquote className="text-xl md:text-2xl font-semibold leading-relaxed text-white/90 mb-8">
-                &ldquo;Chatlync transformed how we handle customer support. Our response time dropped from hours to minutes,
+                &ldquo;ChatSync transformed how we handle customer support. Our response time dropped from hours to minutes,
                 and sales through WhatsApp increased by <span className="text-[var(--color-accent)] font-extrabold">340%</span>.
                 The AI chatbot alone handles 60% of inquiries automatically.&rdquo;
               </blockquote>
@@ -339,7 +351,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] flex items-center justify-center text-white font-bold text-sm border-2 border-white/20 shadow-lg">AH</div>
                 <div>
                   <p className="font-bold text-white">Ahmed Hassan</p>
-                  <p className="text-sm text-gray-400">CEO, StyleHub E-commerce</p>
+                  <p className="text-sm text-gray-400">CEO, StyleHub — Lahore</p>
                 </div>
                 <div className="ml-auto hidden sm:flex items-center gap-2 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full">
                   <TrendingUp className="w-3.5 h-3.5" />
@@ -354,7 +366,7 @@ export default function HomePage() {
             {[
               {
                 name: "Sara Malik",
-                role: "Marketing Head, FreshCart",
+                role: "Marketing Head, FreshCart — Karachi",
                 initials: "SM",
                 gradient: "from-rose-500 to-pink-600",
                 text: "The broadcast feature is incredible. We went from manually messaging customers to reaching 5,000+ at once with personalized campaigns. Open rates are consistently above 85%.",
@@ -362,7 +374,7 @@ export default function HomePage() {
               },
               {
                 name: "Usman Ali",
-                role: "Founder, AutoParts.pk",
+                role: "Founder, AutoParts.pk — Lahore",
                 initials: "UA",
                 gradient: "from-emerald-500 to-teal-600",
                 text: "Abandoned cart recovery alone paid for the subscription 10x over. We're recovering 35% of abandoned carts automatically through WhatsApp — no manual follow-ups needed.",
@@ -370,7 +382,7 @@ export default function HomePage() {
               },
               {
                 name: "Fatima Zaidi",
-                role: "Operations, HealthPlus Clinic",
+                role: "Operations, HealthPlus Clinic — Islamabad",
                 initials: "FZ",
                 gradient: "from-violet-500 to-purple-600",
                 text: "Managing appointment reminders and patient follow-ups was a nightmare. Now the chatbot handles it all. We've reduced no-shows by 60% and our staff can focus on care.",
@@ -417,7 +429,7 @@ export default function HomePage() {
                   ))}
                   <span className="text-white font-bold text-sm ml-1">4.8/5</span>
                 </div>
-                <p className="text-xs text-gray-500">Based on 200+ business reviews</p>
+                <p className="text-xs text-gray-500">Based on 200+ Pakistani business reviews</p>
               </div>
             </div>
           </div>
@@ -432,11 +444,11 @@ export default function HomePage() {
             Ready to supercharge your WhatsApp?
           </h2>
           <p className="text-lg text-[var(--color-body)] mb-10 max-w-xl mx-auto">
-            Join thousands of businesses already using Chatlync to grow revenue and delight customers.
+            Join hundreds of Pakistani businesses already using ChatSync to grow revenue and delight customers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://app.chatlync.io/signup"
+              href="https://app.chatsync.pk/signup"
               className="group px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white text-[16px] font-bold rounded-2xl transition-all shadow-xl shadow-[var(--color-primary)]/20 hover:scale-[1.02] flex items-center justify-center gap-2"
             >
               Start Free Trial
